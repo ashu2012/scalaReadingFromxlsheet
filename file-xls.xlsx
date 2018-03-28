@@ -1,0 +1,43 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+ 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+        var excelFilePath = "book.xlsx";
+        var  inputStream = new FileInputStream(new File(excelFilePath));
+        var workbook = new XSSFWorkbook(inputStream);
+        //in my case the 
+        var  firstSheet = workbook.getSheetAt(3);
+        var iterator  = firstSheet.iterator();
+         
+       
+
+        while (iterator.hasNext()) {
+            var nextRow = iterator.next();
+            var cellIterator = nextRow.cellIterator();
+             
+            while (cellIterator.hasNext()) {
+                var cell = cellIterator.next();
+                //System.out.print(cell.getStringCellValue());
+                 cell.getCellType() match {
+                    case Cell.CELL_TYPE_STRING =>
+                        System.out.print(cell.getStringCellValue());
+                    case Cell.CELL_TYPE_BOOLEAN =>
+                        System.out.print(cell.getBooleanCellValue());
+                    case Cell.CELL_TYPE_NUMERIC =>
+                        System.out.print(cell.getNumericCellValue());
+                }
+                System.out.println(" - ");
+            }
+            System.out.println();
+        }
+         
+        workbook.close();
+        inputStream.close();

@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="scalareadingfromxlsheet-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.11"
+		extra-sbtVersion="1.0.0-M4"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180326115815"/>
+	<dependencies>
+		<module organisation="com.eed3si9n" name="sbt-assembly">
+			<revision name="0.14.3" status="release" pubdate="20160512223836" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.11" extra-sbtVersion="1.0.0-M4" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+				<license name="MIT License" url="https://github.com/sbt/sbt-assembly/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="1918" time="0" location="C:\Users\h217119\.ivy2\cache\scala_2.11\sbt_1.0.0-M4\com.eed3si9n\sbt-assembly\ivy-0.14.3.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.11/sbt_1.0.0-M4//0.14.3/ivys/ivy.xml"/>
+				<caller organisation="default" name="scalareadingfromxlsheet-build" conf="compile-internal, compile, provided, optional" rev="0.14.3" rev-constraint-default="0.14.3" rev-constraint-dynamic="0.14.3" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.11" extra-sbtVersion="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="sbt-assembly" type="jar" ext="jar" status="no" details="" size="215218" time="0" location="C:\Users\h217119\.ivy2\cache\scala_2.11\sbt_1.0.0-M4\com.eed3si9n\sbt-assembly\jars\sbt-assembly-0.14.3.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.11/sbt_1.0.0-M4//0.14.3/jars/sbt-assembly.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pantsbuild" name="jarjar">
+			<revision name="1.6.0" status="release" pubdate="20150924043729" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/pantsbuild/jarjar" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3211" time="0" location="C:\Users\h217119\.ivy2\cache\org.pantsbuild\jarjar\ivy-1.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/pantsbuild/jarjar/1.6.0/jarjar-1.6.0.pom"/>
+				<caller organisation="com.eed3si9n" name="sbt-assembly" conf="compile" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.14.3"/>
+				<artifacts>
+					<artifact name="jarjar" type="jar" ext="jar" status="no" details="" size="75988" time="0" location="C:\Users\h217119\.ivy2\cache\org.pantsbuild\jarjar\jars\jarjar-1.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pantsbuild/jarjar/1.6.0/jarjar-1.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-plugin-api">
+			<revision name="3.3.3" status="release" pubdate="20150422172705" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14205" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.maven\maven-plugin-api\ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.3/maven-plugin-api-3.3.3.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="1.6.0"/>
+				<artifacts>
+					<artifact name="maven-plugin-api" type="jar" ext="jar" status="no" details="" size="46099" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.maven\maven-plugin-api\jars\maven-plugin-api-3.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.3/maven-plugin-api-3.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus">
+			<revision name="0.3.0" status="release" pubdate="20150220001749" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="5021" time="0" location="C:\Users\h217119\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.plexus\ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0/org.eclipse.sisu.plexus-0.3.0.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="3.3.3"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.plexus" type="eclipse-plugin" ext="jar" status="no" details="" size="205404" time="0" location="C:\Users\h217119\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.plexus\eclipse-plugins\org.eclipse.sisu.plexus-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0/org.eclipse.sisu.plexus-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-classworlds">
+			<revision name="2.5.2" status="release" pubdate="20140829223823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7288" time="0" location="C:\Users\h217119\.ivy2\cache\org.codehaus.plexus\plexus-classworlds\ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="plexus-classworlds" type="bundle" ext="jar" status="no" details="" size="52684" time="0" location="C:\Users\h217119\.ivy2\cache\org.codehaus.plexus\plexus-classworlds\bundles\plexus-classworlds-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-component-annotations">
+			<revision name="1.5.5" status="release" pubdate="20101001014459" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5339" time="0" location="C:\Users\h217119\.ivy2\cache\org.codehaus.plexus\plexus-component-annotations\ivy-1.5.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="plexus-component-annotations" type="jar" ext="jar" status="no" details="" size="4211" time="0" location="C:\Users\h217119\.ivy2\cache\org.codehaus.plexus\plexus-component-annotations\jars\plexus-component-annotations-1.5.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.inject">
+			<revision name="0.3.0" status="release" pubdate="20150220000324" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3789" time="0" location="C:\Users\h217119\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.inject\ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0/org.eclipse.sisu.inject-0.3.0.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.inject" type="eclipse-plugin" ext="jar" status="no" details="" size="375267" time="0" location="C:\Users\h217119\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.inject\eclipse-plugins\org.eclipse.sisu.inject-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0/org.eclipse.sisu.inject-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.enterprise" name="cdi-api">
+			<revision name="1.0" status="release" pubdate="20091109041421" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="9850" time="0" location="C:\Users\h217119\.ivy2\cache\javax.enterprise\cdi-api\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="cdi-api" type="jar" ext="jar" status="no" details="" size="44908" time="0" location="C:\Users\h217119\.ivy2\cache\javax.enterprise\cdi-api\jars\cdi-api-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="jsr250-api">
+			<revision name="1.0" status="release" pubdate="20070516015559" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="2621" time="0" location="C:\Users\h217119\.ivy2\cache\javax.annotation\jsr250-api\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jsr250-api" type="jar" ext="jar" status="no" details="" size="5848" time="0" location="C:\Users\h217119\.ivy2\cache\javax.annotation\jsr250-api\jars\jsr250-api-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-artifact">
+			<revision name="3.3.3" status="release" pubdate="20150422172657" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13750" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.maven\maven-artifact\ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.3/maven-artifact-3.3.3.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="3.3.3"/>
+				<artifacts>
+					<artifact name="maven-artifact" type="jar" ext="jar" status="no" details="" size="55090" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.maven\maven-artifact\jars\maven-artifact-3.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.3/maven-artifact-3.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-model">
+			<revision name="3.3.3" status="release" pubdate="20150422172648" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13688" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.maven\maven-model\ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.3/maven-model-3.3.3.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="3.3.3"/>
+				<artifacts>
+					<artifact name="maven-model" type="jar" ext="jar" status="no" details="" size="160817" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.maven\maven-model\jars\maven-model-3.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.3/maven-model-3.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-utils">
+			<revision name="3.0.20" status="release" pubdate="20141019013010" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7450" time="0" location="C:\Users\h217119\.ivy2\cache\org.codehaus.plexus\plexus-utils\ivy-3.0.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom"/>
+				<caller organisation="org.apache.maven" name="maven-model" conf="compile, runtime" rev="3.0.20" rev-constraint-default="3.0.20" rev-constraint-dynamic="3.0.20" callerrev="3.3.3"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.0"/>
+				<caller organisation="org.apache.maven" name="maven-artifact" conf="compile, runtime" rev="3.0.20" rev-constraint-default="3.0.20" rev-constraint-dynamic="3.0.20" callerrev="3.3.3"/>
+				<artifacts>
+					<artifact name="plexus-utils" type="jar" ext="jar" status="no" details="" size="243128" time="0" location="C:\Users\h217119\.ivy2\cache\org.codehaus.plexus\plexus-utils\jars\plexus-utils-3.0.20.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.0.17" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.0.20"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-commons">
+			<revision name="5.0.4" status="release" pubdate="20150515203511" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="no" details="" size="4182" time="0" location="C:\Users\h217119\.ivy2\cache\org.ow2.asm\asm-commons\ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.6.0"/>
+				<artifacts>
+					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="41796" time="0" location="C:\Users\h217119\.ivy2\cache\org.ow2.asm\asm-commons\jars\asm-commons-5.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-tree">
+			<revision name="5.0.4" status="release" pubdate="20150515203518" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="no" details="" size="4171" time="0" location="C:\Users\h217119\.ivy2\cache\org.ow2.asm\asm-tree\ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.pom"/>
+				<caller organisation="org.ow2.asm" name="asm-commons" conf="compile, runtime" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="5.0.4"/>
+				<artifacts>
+					<artifact name="asm-tree" type="jar" ext="jar" status="no" details="" size="29050" time="0" location="C:\Users\h217119\.ivy2\cache\org.ow2.asm\asm-tree\jars\asm-tree-5.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="5.0.4" status="release" pubdate="20150515203455" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3992" time="0" location="C:\Users\h217119\.ivy2\cache\org.ow2.asm\asm\ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.6.0"/>
+				<caller organisation="org.ow2.asm" name="asm-tree" conf="compile, runtime" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="5.0.4"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="53297" time="0" location="C:\Users\h217119\.ivy2\cache\org.ow2.asm\asm\jars\asm-5.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.9.6" status="release" pubdate="20150629105524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3252" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.ant\ant\ivy-1.9.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.6/ant-1.9.6.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="1.9.6" rev-constraint-default="1.9.6" rev-constraint-dynamic="1.9.6" callerrev="1.6.0"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="2029794" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.ant\ant\jars\ant-1.9.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.6/ant-1.9.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.9.6" status="release" pubdate="20150629110744" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2822" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.ant\ant-launcher\ivy-1.9.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.pom"/>
+				<caller organisation="org.apache.ant" name="ant" conf="compile, runtime" rev="1.9.6" rev-constraint-default="1.9.6" rev-constraint-dynamic="1.9.6" callerrev="1.9.6"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="no" details="" size="18392" time="0" location="C:\Users\h217119\.ivy2\cache\org.apache.ant\ant-launcher\jars\ant-launcher-1.9.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.11">
+			<revision name="2.2.1" status="release" pubdate="20140801151255" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3126" time="0" location="C:\Users\h217119\.ivy2\cache\org.scalactic\scalactic_2.11\ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/2.2.1/scalactic_2.11-2.2.1.pom"/>
+				<caller organisation="com.eed3si9n" name="sbt-assembly" conf="compile" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="0.14.3"/>
+				<artifacts>
+					<artifact name="scalactic_2.11" type="bundle" ext="jar" status="no" details="" size="386905" time="0" location="C:\Users\h217119\.ivy2\cache\org.scalactic\scalactic_2.11\bundles\scalactic_2.11-2.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/2.2.1/scalactic_2.11-2.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20180326115808" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.11" extra-sbtVersion="1.0.0-M4" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="default" name="scalareadingfromxlsheet-build" conf="compile-internal, compile, provided, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.11" extra-sbtVersion="1.0.0-M4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="sbt">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015725" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="22">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2808" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\sbt\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.0.0-M4/sbt-1.0.0-M4.pom"/>
+				<caller organisation="default" name="scalareadingfromxlsheet-build" conf="compile-internal, compile, provided, optional" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="sbt" type="jar" ext="jar" status="no" details="" size="62289" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\sbt\jars\sbt-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.0.0-M4/sbt-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="main_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015739" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="23">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4635" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\main_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/main_2.11/1.0.0-M4/main_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="sbt" conf="default, compile, runtime, master" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="main_2.11" type="jar" ext="jar" status="no" details="" size="2577022" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\main_2.11\jars\main_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/main_2.11/1.0.0-M4/main_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-compile_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130324" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="70">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3336" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-compile_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.11/1.0.0-M3/zinc-compile_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="zinc-compile_2.11" type="jar" ext="jar" status="no" details="" size="89020" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-compile_2.11\jars\zinc-compile_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.11/1.0.0-M3/zinc-compile_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-logic_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212655" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="69">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2983" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-logic_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-logic_2.11/0.1.0-M13/util-logic_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="util-logic_2.11" type="jar" ext="jar" status="no" details="" size="68233" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-logic_2.11\jars\util-logic_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-logic_2.11/0.1.0-M13/util-logic_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.1" status="release" pubdate="20140416145108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="33">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3175" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="sbinary_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.4.3"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="2.11.8"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="655685" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.4" status="release" pubdate="20150430192302" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.pom"/>
+				<evicted-by rev="1.0.1"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="2.11.8"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.0.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.0.1"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="sbinary_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.4.3"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="2.11.8"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.0.1"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="sbinary_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.4.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="2.11.8"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="main-settings_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015703" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="66">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4530" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\main-settings_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/main-settings_2.11/1.0.0-M4/main-settings_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="main-settings_2.11" type="jar" ext="jar" status="no" details="" size="693023" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\main-settings_2.11\jars\main-settings_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/main-settings_2.11/1.0.0-M4/main-settings_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-apply-macro_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212644" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="68">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2864" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-apply-macro_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-apply-macro_2.11/0.1.0-M13/util-apply-macro_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="util-apply-macro_2.11" type="jar" ext="jar" status="no" details="" size="91968" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-apply-macro_2.11\jars\util-apply-macro_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-apply-macro_2.11/0.1.0-M13/util-apply-macro_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="command_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015712" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="67">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3775" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\command_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/command_2.11/1.0.0-M4/command_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="command_2.11" type="jar" ext="jar" status="no" details="" size="253063" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\command_2.11\jars\command_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/command_2.11/1.0.0-M4/command_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="actions_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015715" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="24">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="5088" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\actions_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/actions_2.11/1.0.0-M4/actions_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="actions_2.11" type="jar" ext="jar" status="no" details="" size="454357" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\actions_2.11\jars\actions_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/actions_2.11/1.0.0-M4/actions_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-tracking_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212657" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="64">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2847" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-tracking_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.11/0.1.0-M13/util-tracking_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="util-tracking_2.11" type="jar" ext="jar" status="no" details="" size="51633" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-tracking_2.11\jars\util-tracking_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.11/0.1.0-M13/util-tracking_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-cache_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212655" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="65">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3422" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-cache_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-cache_2.11/0.1.0-M13/util-cache_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="util-tracking_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="util-cache_2.11" type="jar" ext="jar" status="no" details="" size="206145" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-cache_2.11\jars\util-cache_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-cache_2.11/0.1.0-M13/util-cache_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130348" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="47">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3890" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.11/1.0.0-M3/zinc_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="zinc_2.11" type="jar" ext="jar" status="no" details="" size="86715" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc_2.11\jars\zinc_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.11/1.0.0-M3/zinc_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-ivy-integration_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130319" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="53">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3016" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-ivy-integration_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-ivy-integration_2.11/1.0.0-M3/zinc-ivy-integration_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="zinc-ivy-integration_2.11" type="jar" ext="jar" status="no" details="" size="29234" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-ivy-integration_2.11\jars\zinc-ivy-integration_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-ivy-integration_2.11/1.0.0-M3/zinc-ivy-integration_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="librarymanagement_2.11">
+			<revision name="0.1.0-M11" status="release" pubdate="20160511234904" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/librarymanagement" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="54">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4051" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\librarymanagement_2.11\ivy-0.1.0-M11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement_2.11/0.1.0-M11/librarymanagement_2.11-0.1.0-M11.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="0.1.0-M11" rev-constraint-default="0.1.0-M11" rev-constraint-dynamic="0.1.0-M11" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-ivy-integration_2.11" conf="compile, runtime" rev="0.1.0-M11" rev-constraint-default="0.1.0-M11" rev-constraint-dynamic="0.1.0-M11" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="0.1.0-M11" rev-constraint-default="0.1.0-M11" rev-constraint-dynamic="0.1.0-M11" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="0.1.0-M11" rev-constraint-default="0.1.0-M11" rev-constraint-dynamic="0.1.0-M11" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="librarymanagement_2.11" type="jar" ext="jar" status="no" details="" size="2172953" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\librarymanagement_2.11\jars\librarymanagement_2.11-0.1.0-M11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement_2.11/0.1.0-M11/librarymanagement_2.11-0.1.0-M11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="serialization_2.11">
+			<revision name="0.1.2" status="release" pubdate="20150602114935" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/serialization" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="57">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3744" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\serialization_2.11\ivy-0.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/serialization_2.11/0.1.2/serialization_2.11-0.1.2.pom"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="0.1.2" rev-constraint-default="0.1.2" rev-constraint-dynamic="0.1.2" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="0.1.2" rev-constraint-default="0.1.2" rev-constraint-dynamic="0.1.2" callerrev="0.1.0-M11"/>
+				<artifacts>
+					<artifact name="serialization_2.11" type="jar" ext="jar" status="no" details="" size="331288" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\serialization_2.11\jars\serialization_2.11-0.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/serialization_2.11/0.1.2/serialization_2.11-0.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.spire-math" name="json4s-support_2.11">
+			<revision name="0.6.0" status="release" pubdate="20140924014025" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="63">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3067" time="0" location="C:\Users\h217119\.ivy2\cache\org.spire-math\json4s-support_2.11\ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/json4s-support_2.11/0.6.0/json4s-support_2.11-0.6.0.pom"/>
+				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile, runtime" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.1.2"/>
+				<artifacts>
+					<artifact name="json4s-support_2.11" type="jar" ext="jar" status="no" details="" size="7514" time="0" location="C:\Users\h217119\.ivy2\cache\org.spire-math\json4s-support_2.11\jars\json4s-support_2.11-0.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/json4s-support_2.11/0.6.0/json4s-support_2.11-0.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.spire-math" name="jawn-parser_2.11">
+			<revision name="0.6.0" status="release" pubdate="20140924013931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="62">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2774" time="0" location="C:\Users\h217119\.ivy2\cache\org.spire-math\jawn-parser_2.11\ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.11/0.6.0/jawn-parser_2.11-0.6.0.pom"/>
+				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile, runtime" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.1.2"/>
+				<caller organisation="org.spire-math" name="json4s-support_2.11" conf="compile, runtime" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.6.0"/>
+				<artifacts>
+					<artifact name="jawn-parser_2.11" type="jar" ext="jar" status="no" details="" size="77624" time="0" location="C:\Users\h217119\.ivy2\cache\org.spire-math\jawn-parser_2.11\jars\jawn-parser_2.11-0.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.11/0.6.0/jawn-parser_2.11-0.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.11">
+			<revision name="3.2.10" status="release" pubdate="20140513225653" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="59">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2973" time="0" location="C:\Users\h217119\.ivy2\cache\org.json4s\json4s-core_2.11\ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.10/json4s-core_2.11-3.2.10.pom"/>
+				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.1.2"/>
+				<artifacts>
+					<artifact name="json4s-core_2.11" type="jar" ext="jar" status="no" details="" size="577461" time="0" location="C:\Users\h217119\.ivy2\cache\org.json4s\json4s-core_2.11\jars\json4s-core_2.11-3.2.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.10/json4s-core_2.11-3.2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.6" status="release" pubdate="20131009092654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="61">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4209" time="0" location="C:\Users\h217119\.ivy2\cache\com.thoughtworks.paranamer\paranamer\ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="3.2.10"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="C:\Users\h217119\.ivy2\cache\com.thoughtworks.paranamer\paranamer\jars\paranamer-2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014050500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2536" time="0" location="C:\Users\h217119\.ivy2\cache\javax.inject\javax.inject\ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="C:\Users\h217119\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.11">
+			<revision name="3.2.10" status="release" pubdate="20140513225611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="60">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2548" time="0" location="C:\Users\h217119\.ivy2\cache\org.json4s\json4s-ast_2.11\ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.10/json4s-ast_2.11-3.2.10.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="3.2.10"/>
+				<caller organisation="org.spire-math" name="json4s-support_2.11" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.6.0"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.11" type="jar" ext="jar" status="no" details="" size="82156" time="0" location="C:\Users\h217119\.ivy2\cache\org.json4s\json4s-ast_2.11\jars\json4s-ast_2.11-3.2.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.10/json4s-ast_2.11-3.2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-pickling_2.11">
+			<revision name="0.10.1" status="release" pubdate="20150515225041" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scala/pickling" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="58">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
+				<metadata-artifact status="no" details="" size="3394" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-pickling_2.11\ivy-0.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-pickling_2.11/0.10.1/scala-pickling_2.11-0.10.1.pom"/>
+				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile, runtime" rev="0.10.1" rev-constraint-default="0.10.1" rev-constraint-dynamic="0.10.1" callerrev="0.1.2"/>
+				<artifacts>
+					<artifact name="scala-pickling_2.11" type="jar" ext="jar" status="no" details="" size="832069" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-pickling_2.11\jars\scala-pickling_2.11-0.10.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-pickling_2.11/0.10.1/scala-pickling_2.11-0.10.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.46" status="release" pubdate="20120202180927" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="56">
+				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3239" time="0" location="C:\Users\h217119\.ivy2\cache\com.jcraft\jsch\ivy-0.1.46.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.46/jsch-0.1.46.pom"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="0.1.46" rev-constraint-default="0.1.46" rev-constraint-dynamic="0.1.46" callerrev="0.1.0-M11"/>
+				<artifacts>
+					<artifact name="jsch" type="jar" ext="jar" status="no" details="" size="225751" time="0" location="C:\Users\h217119\.ivy2\cache\com.jcraft\jsch\jars\jsch-0.1.46.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.46/jsch-0.1.46.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt.ivy" name="ivy">
+			<revision name="2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a" status="release" pubdate="20151230180957" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/ivy" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="55">
+				<license name="Apache-2.0" url="https://github.com/sbt/ivy/blob/2.3.x-sbt/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3595" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt.ivy\ivy\ivy-2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a/ivy-2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a.pom"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a" rev-constraint-default="2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a" rev-constraint-dynamic="2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a" callerrev="0.1.0-M11"/>
+				<artifacts>
+					<artifact name="ivy" type="jar" ext="jar" status="no" details="" size="1136249" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt.ivy\ivy\jars\ivy-2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a/ivy-2.3.0-sbt-2cc8d2761242b072cedb0a04cb39435c4fa24f9a.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-compile-core_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130318" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="52">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4460" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-compile-core_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.11/1.0.0-M3/zinc-compile-core_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-ivy-integration_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="zinc-compile-core_2.11" type="jar" ext="jar" status="no" details="" size="260107" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-compile-core_2.11\jars\zinc-compile-core_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.11/1.0.0-M3/zinc-compile-core_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-persist_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130317" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="50">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3318" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-persist_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.11/1.0.0-M3/zinc-persist_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="zinc-persist_2.11" type="jar" ext="jar" status="no" details="" size="133452" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-persist_2.11\jars\zinc-persist_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.11/1.0.0-M3/zinc-persist_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="sbinary_2.11">
+			<revision name="0.4.3" status="release" pubdate="20160408093438" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbinary" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="51">
+				<license name="MIT" url="https://github.com/sbt/sbinary/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2858" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\sbinary_2.11\ivy-0.4.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/sbinary_2.11/0.4.3/sbinary_2.11-0.4.3.pom"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="0.4.3" rev-constraint-default="0.4.3" rev-constraint-dynamic="0.4.3" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="zinc-persist_2.11" conf="compile, runtime" rev="0.4.3" rev-constraint-default="0.4.3" rev-constraint-dynamic="0.4.3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="sbinary_2.11" type="jar" ext="jar" status="no" details="" size="154818" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\sbinary_2.11\jars\sbinary_2.11-0.4.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/sbinary_2.11/0.4.3/sbinary_2.11-0.4.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-core_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130350" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="48">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3886" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-core_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.11/1.0.0-M3/zinc-core_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-persist_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="zinc-core_2.11" type="jar" ext="jar" status="no" details="" size="457690" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-core_2.11\jars\zinc-core_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.11/1.0.0-M3/zinc-core_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-relation_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212652" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="49">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2689" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-relation_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-relation_2.11/0.1.0-M13/util-relation_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc-core_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="util-logic_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="util-relation_2.11" type="jar" ext="jar" status="no" details="" size="30695" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-relation_2.11\jars\util-relation_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-relation_2.11/0.1.0-M13/util-relation_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-apiinfo_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130352" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="45">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3332" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-apiinfo_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.11/1.0.0-M3/zinc-apiinfo_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc-core_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="zinc-apiinfo_2.11" type="jar" ext="jar" status="no" details="" size="280318" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-apiinfo_2.11\jars\zinc-apiinfo_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.11/1.0.0-M3/zinc-apiinfo_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-classfile_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130339" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="46">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3472" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-classfile_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.11/1.0.0-M3/zinc-classfile_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-apiinfo_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="zinc-classfile_2.11" type="jar" ext="jar" status="no" details="" size="106224" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-classfile_2.11\jars\zinc-classfile_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.11/1.0.0-M3/zinc-classfile_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-completion_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212643" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="44">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3252" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-completion_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-completion_2.11/0.1.0-M13/util-completion_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="util-completion_2.11" type="jar" ext="jar" status="no" details="" size="419057" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-completion_2.11\jars\util-completion_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-completion_2.11/0.1.0-M13/util-completion_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="testing_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015705" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="41">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3421" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\testing_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/testing_2.11/1.0.0-M4/testing_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="testing_2.11" type="jar" ext="jar" status="no" details="" size="103867" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\testing_2.11\jars\testing_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/testing_2.11/1.0.0-M4/testing_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-agent">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015701" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="42">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2556" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\test-agent\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.0.0-M4/test-agent-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="test-agent" type="jar" ext="jar" status="no" details="" size="23886" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\test-agent\jars\test-agent-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.0.0-M4/test-agent-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20130628154435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="43">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2580" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\test-interface\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/h217119/.sbt/preloaded/org.scala-sbt/test-interface/1.0/ivys/ivy.xml"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="test-agent" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\test-interface\jars\test-interface-1.0.jar">
+						<origin-location is-local="false" location="file:/C:/Users/h217119/.sbt/preloaded/org.scala-sbt/test-interface/1.0/jars/test-interface.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="task-system_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015709" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="37">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3481" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\task-system_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/task-system_2.11/1.0.0-M4/task-system_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="task-system_2.11" type="jar" ext="jar" status="no" details="" size="134940" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\task-system_2.11\jars\task-system_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/task-system_2.11/1.0.0-M4/task-system_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="tasks_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015656" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="38">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3192" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\tasks_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/tasks_2.11/1.0.0-M4/tasks_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="task-system_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="tasks_2.11" type="jar" ext="jar" status="no" details="" size="132461" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\tasks_2.11\jars\tasks_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/tasks_2.11/1.0.0-M4/tasks_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-collection_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212646" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="40">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2693" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-collection_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-collection_2.11/0.1.0-M13/util-collection_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="task-system_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="tasks_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scala-sbt" name="util-completion_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-apply-macro_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-logic_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<artifacts>
+					<artifact name="util-collection_2.11" type="jar" ext="jar" status="no" details="" size="473952" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-collection_2.11\jars\util-collection_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-collection_2.11/0.1.0-M13/util-collection_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-control_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212648" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="39">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2562" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-control_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-control_2.11/0.1.0-M13/util-control_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="tasks_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="util-completion_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="util-control_2.11" type="jar" ext="jar" status="no" details="" size="13343" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-control_2.11\jars\util-control_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-control_2.11/0.1.0-M13/util-control_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="run_2.11">
+			<revision name="1.0.0-M4" status="release" pubdate="20160513015654" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="25">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3323" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\run_2.11\ivy-1.0.0-M4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/run_2.11/1.0.0-M4/run_2.11-1.0.0-M4.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M4" rev-constraint-default="1.0.0-M4" rev-constraint-dynamic="1.0.0-M4" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="run_2.11" type="jar" ext="jar" status="no" details="" size="136626" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\run_2.11\jars\run_2.11-1.0.0-M4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/run_2.11/1.0.0-M4/run_2.11-1.0.0-M4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="zinc-classpath_2.11">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130316" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="31">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3612" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-classpath_2.11\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.11/1.0.0-M3/zinc-classpath_2.11-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="run_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-core_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="zinc-classpath_2.11" type="jar" ext="jar" status="no" details="" size="93633" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\zinc-classpath_2.11\jars\zinc-classpath_2.11-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.11/1.0.0-M3/zinc-classpath_2.11-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="launcher-interface">
+			<revision name="1.0.0" status="release" pubdate="20150817154630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-sbt.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="36">
+				<license name="BSD" url="http://opensource.org/licenses/BSD-2-Clause"/>
+				<metadata-artifact status="no" details="" size="2495" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\launcher-interface\ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/h217119/.sbt/preloaded/org.scala-sbt/launcher-interface/1.0.0/ivys/ivy.xml"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-classpath_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="launcher-interface" type="jar" ext="jar" status="no" details="" size="10000" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\launcher-interface\jars\launcher-interface-1.0.0.jar">
+						<origin-location is-local="false" location="file:/C:/Users/h217119/.sbt/preloaded/org.scala-sbt/launcher-interface/1.0.0/jars/launcher-interface.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="compiler-interface">
+			<revision name="1.0.0-M3" status="release" pubdate="20160512130337" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/zinc" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="35">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2696" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\compiler-interface\ivy-1.0.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.0.0-M3/compiler-interface-1.0.0-M3.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-classpath_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-classfile_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-apiinfo_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="1.0.0-M3" rev-constraint-default="1.0.0-M3" rev-constraint-dynamic="1.0.0-M3" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="compiler-interface" type="jar" ext="jar" status="no" details="" size="74130" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\compiler-interface\jars\compiler-interface-1.0.0-M3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.0.0-M3/compiler-interface-1.0.0-M3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-logging_2.11">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212651" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="27">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2955" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-logging_2.11\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-logging_2.11/0.1.0-M13/util-logging_2.11-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-classfile_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="run_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="task-system_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-core_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="util-logging_2.11" type="jar" ext="jar" status="no" details="" size="119458" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-logging_2.11\jars\util-logging_2.11-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-logging_2.11/0.1.0-M13/util-logging_2.11-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="2.13" status="release" pubdate="20150810220856" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="29">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="4493" time="0" location="C:\Users\h217119\.ivy2\cache\jline\jline\ivy-2.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.pom"/>
+				<caller organisation="org.scala-sbt" name="util-completion_2.11" conf="compile, runtime" rev="2.13" rev-constraint-default="2.13" rev-constraint-dynamic="2.13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-logging_2.11" conf="compile, runtime" rev="2.13" rev-constraint-default="2.13" rev-constraint-dynamic="2.13" callerrev="0.1.0-M13"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="248566" time="0" location="C:\Users\h217119\.ivy2\cache\jline\jline\jars\jline-2.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jline/jline/2.13/jline-2.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.jansi" name="jansi">
+			<revision name="1.11" status="release" pubdate="20130513185123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="30">
+				<metadata-artifact status="no" details="" size="3852" time="0" location="C:\Users\h217119\.ivy2\cache\org.fusesource.jansi\jansi\ivy-1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.pom"/>
+				<caller organisation="jline" name="jline" conf="compile, runtime" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="2.13"/>
+				<artifacts>
+					<artifact name="jansi" type="jar" ext="jar" status="no" details="" size="114415" time="0" location="C:\Users\h217119\.ivy2\cache\org.fusesource.jansi\jansi\jars\jansi-1.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="util-interface">
+			<revision name="0.1.0-M13" status="release" pubdate="20160511212639" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/util" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="28">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2379" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-interface\ivy-0.1.0-M13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/util-interface/0.1.0-M13/util-interface-0.1.0-M13.pom"/>
+				<caller organisation="org.scala-sbt" name="util-logging_2.11" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="compiler-interface" conf="compile, runtime" rev="0.1.0-M13" rev-constraint-default="0.1.0-M13" rev-constraint-dynamic="0.1.0-M13" callerrev="1.0.0-M3"/>
+				<artifacts>
+					<artifact name="util-interface" type="jar" ext="jar" status="no" details="" size="4426" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\util-interface\jars\util-interface-0.1.0-M13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/util-interface/0.1.0-M13/util-interface-0.1.0-M13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="io_2.11">
+			<revision name="1.0.0-M6" status="release" pubdate="20160511205311" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/io" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="26">
+				<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2896" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\io_2.11\ivy-1.0.0-M6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/io_2.11/1.0.0-M6/io_2.11-1.0.0-M6.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc-classpath_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="run_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scala-sbt" name="util-completion_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-tracking_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-classfile_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="task-system_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-core_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="1.0.0-M6" rev-constraint-default="1.0.0-M6" rev-constraint-dynamic="1.0.0-M6" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="io_2.11" type="jar" ext="jar" status="no" details="" size="265409" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-sbt\io_2.11\jars\io_2.11-1.0.0-M6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/io_2.11/1.0.0-M6/io_2.11-1.0.0-M6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.11.8" status="release" pubdate="20160304205647" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="32">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3139" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang\scala-compiler\ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.pom"/>
+				<caller organisation="org.scala-sbt" name="zinc-classpath_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="util-apply-macro_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.6" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="15487351" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.4" status="release" pubdate="20150430193747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="34">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="2.11.8"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="423753" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.0.4"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.10.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.8" status="release" pubdate="20160304205641" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2670" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.pom"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="2.11.8"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scalactic" name="scalactic_2.11" conf="default, compile, runtime, master" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.2" callerrev="2.2.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.6" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4573750" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.8.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160304205633" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="master(*), default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2501" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="2.11.8"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
+				<caller organisation="org.scala-sbt" name="util-completion_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-tracking_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scalactic" name="scalactic_2.11" conf="default, compile, runtime, master" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.2" callerrev="2.2.1"/>
+				<caller organisation="org.spire-math" name="jawn-parser_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.2" callerrev="0.6.0"/>
+				<caller organisation="org.scala-sbt" name="actions_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile-core_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.6" callerrev="0.10.1"/>
+				<caller organisation="org.spire-math" name="json4s-support_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.2" callerrev="0.6.0"/>
+				<caller organisation="org.scala-sbt" name="zinc-classfile_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="sbinary_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.4.3"/>
+				<caller organisation="org.scala-sbt" name="zinc-compile_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-apiinfo_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="tasks_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-core_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc-persist_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="util-apply-macro_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-logic_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="util-relation_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="zinc-classpath_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="zinc_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="run_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="io_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M6"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
+				<caller organisation="org.scala-sbt" name="testing_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="util-cache_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="librarymanagement_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M11"/>
+				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.5" callerrev="0.1.2"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<caller organisation="org.scala-sbt" name="util-logging_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="default" name="scalareadingfromxlsheet-build" conf="compile-internal, compile, provided, optional" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="org.scala-sbt" name="util-collection_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-sbt" name="main_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="zinc-ivy-integration_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M3"/>
+				<caller organisation="org.scala-sbt" name="task-system_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="command_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.6" callerrev="1.0.4"/>
+				<caller organisation="org.scala-sbt" name="main-settings_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<caller organisation="org.scala-sbt" name="util-control_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-M13"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="2.11.8"/>
+				<caller organisation="org.scala-sbt" name="sbt" conf="default, compile, runtime, master" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0.0-M4"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5744974" time="0" location="C:\Users\h217119\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

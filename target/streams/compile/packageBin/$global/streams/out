@@ -1,0 +1,23 @@
+[0m[[0minfo[0m] [0mPackaging C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\scalareadingfromxlsheet_2.11-0.1.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	brd[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd[0m
+[0m[[0mdebug[0m] [0m	brd\buildCaseClass.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\buildCaseClass.class[0m
+[0m[[0mdebug[0m] [0m	brd\typeInformation.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\typeInformation.class[0m
+[0m[[0mdebug[0m] [0m	brd\buildTrasnformationTrait.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\buildTrasnformationTrait.class[0m
+[0m[[0mdebug[0m] [0m	brd\buildCaseClass$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\buildCaseClass$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	brd\readxls$.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\readxls$.class[0m
+[0m[[0mdebug[0m] [0m	brd\readxls.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\readxls.class[0m
+[0m[[0mdebug[0m] [0m	brd\readxls$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\readxls$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	brd\typeInformation$class.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\typeInformation$class.class[0m
+[0m[[0mdebug[0m] [0m	brd\buildTrasnformationTrait$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\h217119\IdeaProjects\scalaReadingFromxlsheet\target\scala-2.11\classes\brd\buildTrasnformationTrait$$anonfun$3.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
